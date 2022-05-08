@@ -1,0 +1,21 @@
+h1 {
+    color: blue;
+}
+
+.main {
+    display:flex
+}
+
+#list {
+    flex:5;
+    background-color: darkcyan;
+    min-height: calc(100vh - 88px);
+
+}
+#form {
+    flex:3;
+    background-color: darkgoldenrod;
+    min-height: calc(100vh - 88px);
+
+}
+
