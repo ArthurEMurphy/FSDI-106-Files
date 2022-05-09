@@ -8,14 +8,21 @@ h1 {
 
 #list {
     flex:5;
-    background-color: darkcyan;
+    background-color: white;
     min-height: calc(100vh - 88px);
 
 }
 #form {
     flex:3;
-    background-color: darkgoldenrod;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 6px;
     min-height: calc(100vh - 88px);
 
+}
+
+#form.control {
+    margin-bottom: 12px;
 }
 
