@@ -23,4 +23,3 @@ class Task {
     this.name = "Arthur";
   }
 }
-                        

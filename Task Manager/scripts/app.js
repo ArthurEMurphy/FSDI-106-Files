@@ -65,13 +65,10 @@ function saveTask() {
 }
 
 function clearForm() {
-    $("#txtTitle").val("");
-    $("#txtDesc").val("");
-    $("#selDate").val("0");
-    $("#txtLocation").val("");
-    $("#txtColor").val("FFFFFF");
-    $("#selFrequency").val("0");
-    $("#selStatus").val("1");
+    $("input").val("");
+    $("textarea").val("");
+    $("select").val("0");
+    $("selColor").val("FFFFFF");
     important = true;
     toggleImportance();
 }
@@ -90,6 +87,7 @@ function getStatusText(status) {
             return "Abandoned";
 
         default:
+            return "Other";
     }
 }
 
