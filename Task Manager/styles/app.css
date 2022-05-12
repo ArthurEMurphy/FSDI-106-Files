@@ -1,28 +1,96 @@
+body {
+    margin: 0;
+}
 h1 {
     color: blue;
 }
 
 .main {
-    display:flex
+    display:flex;
 }
 
 #list {
     flex:5;
-    background-color: white;
     min-height: calc(100vh - 88px);
-
+    position: relative;
+    padding-top: 60px;
 }
+
+#btnTogglePanel {
+    position:absolute;
+    right: 10px;
+    top: 10px;
+}
+
 #form {
-    flex:3;
-    padding: 10px;
-    background-color: #f4f4f4;
+    flex:2;
+    padding: 20px;
+    background-color: #937e7696;
     border: 1px solid rgb(224, 224, 224);
     border-radius: 6px;
     min-height: calc(100vh - 88px);
 
 }
 
-#form.control {
+#form .control {
     margin-bottom: 12px;
 }
 
+#form .control label {
+    color: rgb(235, 235, 235);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.iImportant {
+    font-size: 32px;
+    cursor: pointer;
+}
+
+#form .control .fas {
+    color: #f90093;
+}
+
+#form .control .far {
+    color: #ffb071;
+}
+
+/* *********************************
+/* ********** Task item ************
+/* *********************************
+/*  */
+.task-item { 
+    display:flex;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+}
+
+.task-item:hover {
+    border-color: rgb(149, 0, 0);
+    border-left-width: 4px;
+}
+
+.task-item .icon {
+    flex: 1;
+    padding-top: 6px;
+}
+
+.task-item .info-1 {
+    flex: 3;
+}
+
+.task-item .info-2 {
+    flex: 1;
+}
+
+.task-item .info-2 {
+    flex: 1;
+}
+
+.task-item .info-2 label {
+    display: block;
+}
+
+.task-item .info-3 {
+    flex: 1;
+}

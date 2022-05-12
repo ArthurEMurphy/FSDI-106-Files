@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Task Manager</title>
+    <title>Art's Task Manager</title>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -17,7 +17,7 @@
     <main class="main">
         <section id="list">
             <h5 id="headCount"></h5>
-            
+
             <button id="btnClearAll" class="btn bt-sm btn-secondary">Clear</button>     
             <button id="btnTogglePanel" class="btn bt-sm btn-secondary">Hide</button>
 
@@ -39,7 +39,7 @@
 
                 <div class="control">
                     <label class="form-label">Description</label>
-                    <textarea rows="5" class="form-control"></textarea>
+                    <textarea id="txtDesc" rows="5" class="form-control"></textarea>
                 <div> 
 
                 <div class="control">
@@ -87,20 +87,21 @@
                     <button class="btn btn-dark mt-1">Save Task</button>
                 </div>
 
-            </div>                                                                     
-        </section>
+            </div>  
+            <div class="form-row">
 
-        
+                <br>
 
+                <div class="form-group col-md-12">
+                    <label for="invites">Invites</label>
+                    <i class="fa-solid fa-star"></i>
+                </div>
 
-            </section>
-
+            </div>
             
-
-            <div class="control-control>"
-
-        
-
+            <button type="submit" class="brn btn-primary">Sign in</button>
+        </form>
+        </section>
     </main>
 
     <div class="aside">
