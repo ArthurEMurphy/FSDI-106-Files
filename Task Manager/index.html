@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>My Task Manager</title>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" />
@@ -12,31 +11,30 @@
     <link href="styles/app.css" rel="stylesheet">
 </head>
 
-<header>
-    <nav>
-
-    </nav>
-</header>
 <body>
     <h1>Welcome to my task manager</h1>
 
     <main class="main">
         <section id="list">
+            <h5 id="headCount"></h5>
+            
+            <button id="btnClearAll" class="btn bt-sm btn-secondary">Clear</button>     
+            <button id="btnTogglePanel" class="btn bt-sm btn-secondary">Hide</button>
 
+        <div id="tasks"></div>
         </section>
 
         <section id="form">
             <h3>Task Information</h3>
             <div class="capture-form">
-
                 <div class="control">
                     <label class="form-label">Important</label>
-                    <input type="text" class="form-control">
+                    <i type="iImportant" class="iImportant far fa-star"></i>
                 </div> 
 
                 <div class="control">
                     <label class="form-label">Title</label>
-                    <input type="text" class="form-control">
+                    <input id="txtTitle" type="text" class="form-control">
                 </div>
 
                 <div class="control">
