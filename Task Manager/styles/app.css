@@ -1,96 +1,102 @@
 body {
-    margin: 0;
+  margin: 0;
+  background-color: #0b7819;
 }
+
 h1 {
-    color: blue;
+  color: black;
+  text-align: center;
+  font-weight: 400;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 2px 0 10px #3be607;
 }
 
 .main {
-    display:flex;
+  display: flex;
 }
 
 #list {
-    flex:5;
-    min-height: calc(100vh - 88px);
-    position: relative;
-    padding-top: 60px;
+  flex: 5;
+  min-height: calc(100vh - 88px);
+  position: relative;
+  padding-top: 60px;
 }
 
 #btnTogglePanel {
-    position:absolute;
-    right: 10px;
-    top: 10px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
 
 #form {
-    flex:2;
-    padding: 20px;
-    background-color: #937e7696;
-    border: 1px solid rgb(224, 224, 224);
-    border-radius: 6px;
-    min-height: calc(100vh - 88px);
-
+  flex: 2;
+  padding: 20px;
+  background-color: #d3d1d100;
+  border: 1px solid rgb(18, 86, 17);
+  border-radius: 6px;
+  min-height: calc(100vh - 88px);
+  box-shadow: -1px 0 6px 0px #575757;
 }
 
 #form .control {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 #form .control label {
-    color: rgb(235, 235, 235);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(0, 0, 0);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .iImportant {
-    font-size: 32px;
-    cursor: pointer;
+  font-size: 32px;
+  cursor: pointer;
 }
 
 #form .control .fas {
-    color: #f90093;
+  color: #000000;
 }
 
 #form .control .far {
-    color: #ffb071;
+  color: #000000;
 }
 
 /* *********************************
 /* ********** Task item ************
-/* *********************************
-/*  */
-.task-item { 
-    display:flex;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #FFFFFF;
+/* **************************** */
+
+.task-item {
+  display: flex;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #0a611d;
 }
 
 .task-item:hover {
-    border-color: rgb(149, 0, 0);
-    border-left-width: 4px;
+  border-color: rgb(255, 255, 255);
+  border-left-width: 4px;
 }
 
 .task-item .icon {
-    flex: 1;
-    padding-top: 6px;
+  flex: 1;
+  padding-top: 6px;
 }
 
 .task-item .info-1 {
-    flex: 3;
+  flex: 3;
 }
 
 .task-item .info-2 {
-    flex: 1;
+  flex: 1;
 }
 
 .task-item .info-2 {
-    flex: 1;
+  flex: 1;
 }
 
 .task-item .info-2 label {
-    display: block;
+  display: block;
 }
 
 .task-item .info-3 {
-    flex: 1;
+  flex: 1;
 }
