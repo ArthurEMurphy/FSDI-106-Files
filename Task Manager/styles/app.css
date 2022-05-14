@@ -1,14 +1,16 @@
 body {
   margin: 0;
-  background-color: #0b7819;
+  background-color: #27a002;
 }
 
 h1 {
-  color: black;
+  color: rgb(255, 255, 255);
   text-align: center;
-  font-weight: 400;
+  margin: 15px 20px 15px 20px;
+  font-weight: 700;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  box-shadow: 2px 0 10px #3be607;
+  border-radius: 6px;
+  box-shadow: 20px 30px 35px #000000;
 }
 
 .main {
@@ -31,11 +33,11 @@ h1 {
 #form {
   flex: 2;
   padding: 20px;
-  background-color: #d3d1d100;
-  border: 1px solid rgb(18, 86, 17);
+  background-color: #f8f5f500;
+  border: 5px solid rgb(0, 0, 0);
   border-radius: 6px;
   min-height: calc(100vh - 88px);
-  box-shadow: -1px 0 6px 0px #575757;
+  box-shadow: -1px 0 26px 0px #fcff4d;
 }
 
 #form .control {
@@ -43,21 +45,21 @@ h1 {
 }
 
 #form .control label {
-  color: rgb(0, 0, 0);
+  color: rgb(232, 255, 99);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .iImportant {
-  font-size: 32px;
+  font-size: 35px;
   cursor: pointer;
 }
 
 #form .control .fas {
-  color: #000000;
+  color: #f8ff70;
 }
 
 #form .control .far {
-  color: #000000;
+  color: #fffc68;
 }
 
 /* *********************************
@@ -68,11 +70,11 @@ h1 {
   display: flex;
   padding: 10px;
   border-radius: 5px;
-  background-color: #0a611d;
+  background-color: #ffffff;
 }
 
 .task-item:hover {
-  border-color: rgb(255, 255, 255);
+  border-color: rgb(252, 252, 85);
   border-left-width: 4px;
 }
 

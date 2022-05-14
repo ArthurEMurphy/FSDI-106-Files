@@ -34,7 +34,7 @@ function saveTask() {
   let dueDate = $("#selDate").val();
   let location = $("#txtLocation").val();
   let invites = $("#txtInvites").val();
-  let color = $("#txtColor").val();
+  let color = $("#selColor").val();
   let frequency = $("#selFrequency").val();
   let status = $("#selStatus").val();
 
@@ -48,12 +48,14 @@ function saveTask() {
     invites,
     color,
     frequency,
-    status,
+    status
   );
+
   console.log(task);
   console.log(JSON.stringify(task));
 
   displayTask(task);
+
   $.ajax({
     type: "post",
     url: "https://fsdiapi.azurewebsites.net/api/tasks/",
@@ -61,7 +63,6 @@ function saveTask() {
     contentType: "application/json",
     success: function (res) {
       console.log("Task saved", res);
-      displayTask(task);
       clearForm();
       // update the count
       total += 1;
@@ -100,13 +101,27 @@ function getStatusText(status) {
   }
 }
 
+function getFrequencyText(frequency) {
+  switch (frequency) {
+    case "0":
+      return "One Time";
+    case "1":
+      return "Daily";
+    case "2":
+      return "Weekly";
+    case "3":
+      return "Monthly";
+  }
+}
+
 function displayTask(task) {
   let iconClass = iconNonImportant;
   if (task.important) {
     iconClass = iconImportant;
   }
 
-  let syntax = `<div class="task-item" style="border: 1px solid ${task.color};">
+  let syntax = `<div class="task-item" style="border: 1px solid ${
+    task.color};">
     <div class="icon">
     <i class="${iconClass}"></i>
     </div>
@@ -171,7 +186,7 @@ function clearAllTasks() {
   // /api/tasks/clear/<name>
   $.ajax({
     type: "delete",
-    url: "https://fsdiapi.azurewebsites.net/api/tasks",
+    url: "https://fsdiapi.azurewebsites.net/api/tasks/clear/Arthur",
     success: function () {
       //reload the page
       location.reload();
