@@ -85,19 +85,19 @@ function clearForm() {
 
 function getStatusText(status) {
   switch (status) {
+    case "0":
+      return "Not Started";
     case "1":
-      return "Pending";
-    case "2":
       return "In Progress";
-    case "3":
+    case "2":
       return "Paused";
-    case "4":
+    case "3":
       return "Completed";
-    case "5":
+    case "4":
       return "Abandoned";
 
     default:
-      return "Other";
+      return "0";
   }
 }
 
